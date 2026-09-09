@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F0F0F0;
+    font-family: "Poppins";
+     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem 1.4rem;
+    margin: 8% auto;
+    max-width: 525px;
+    border-radius: 30px 30px 25% 30px;
+}
+.date{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 4rem;
+}
+.dayError{
+    grid-column: 1;
+}
+.monthError{
+    grid-column: 2;
+}
+.yearError{
+    grid-column: 3;
+}
+.txt-sm{
+    color: #6E6E6E;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.input-date{
+   margin-right: 25px;
+   font-size: 20px; 
+   font-weight: 800;
+   width: 90px;
+   height: 30px;
+   padding: 7px 7px 7px 15px; 
+   grid-row: 2; 
+   border-radius: 5px;
+   border: 2px solid gainsboro;
+}
+.input-date::-webkit-outer-spin-button,
+.input-date::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.error{
+    border-color: red;
+}
+.e-txt{
+    color: red;
+}
+p{
+    font-size: 10px;
+}
+button{
+    cursor: pointer;
+}
+.separator {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    margin-top: 0;
+}
+
+.click-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #874DFF;
+    border: none;
+    border-radius: 50%;
+}
+.click-arrow:hover{
+    background-color: #884dffb4;
+}
+.click-arrow:active{
+    background-color: black;
+}
+
+.date-res{
+    display: flex;
+    height: 72px;
+} 
+.date-txt{
+   font-style: italic;
+   font-size: 72px;
+   font-weight: 800; 
+}
+.date-num{
+    font-style: italic;
+    color: #874DFF;
+    font-size: 72px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 590px){
+    .page{
+        margin: 10rem auto;
+        width: 400px;
+    }
+    .result{
+       margin-top: 50px;
+    }
+    .click-arrow{
+        right: 50%;
+        transform: translate(50%, -50% );
+    }
+}
